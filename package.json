@@ -1,0 +1,30 @@
+{
+  "name": "pagina-final",
+  "version": "1.0.0",
+  "description": "",
+  "browsers":"> 0.5%, last 4 versions, not dead",
+  "scripts": {
+    "desarrollo":"parcel fuente/index.html --dist-dir desarrollo",
+    "produccion":"parcel build fuente/index.html --public-url './' --dist-dir produccion",
+    "limpieza": "rimraf desarrollo produccion .parcel-cache",
+    "des": "npm run desarrollo",
+    "prod": "npm-run-all limpieza produccion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avilarc/FINAL-WEB-DIW.git"
+  },
+  "author": "Antonio Villegas Arcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avilarc/FINAL-WEB-DIW/issues"
+  },
+  "homepage": "https://github.com/Avilarc/FINAL-WEB-DIW#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.11.0",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "rimraf": "^5.0.5"
+  }
+}
