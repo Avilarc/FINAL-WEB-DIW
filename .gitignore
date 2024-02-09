@@ -1,5 +1,7 @@
 node_modules
 produccion
 desarrollo
-parcel-cache
+.parcel-cache
+.idea
 *tmp
+TeoriaEjemplos

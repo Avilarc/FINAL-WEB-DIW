@@ -1,0 +1,41 @@
+footer {
+  background-color: $color_menus;
+  color: $color_texto;
+  padding: 20px 0;
+
+  a {
+    color: $color_action;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color_texto;
+  }
+
+  p {
+    margin: 5px;
+  }
+
+  .contacto {
+    margin-left: 10px;
+  }
+
+  .aboutUs {
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .socialMedia {
+    margin-right: 20px;
+
+    a {
+      i {
+        color: $color_texto;
+      }
+
+      i:hover {
+        color: $color_action;
+      }
+    }
+  }
+}

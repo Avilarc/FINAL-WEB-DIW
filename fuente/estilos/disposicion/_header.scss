@@ -1,1 +1,57 @@
-$var : 0rem;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      @include mixin_media_query(r1) {
+        display: none;
+      }
+    }
+
+    h2 {
+      @include mixin_media_query(r2) {
+        display: none;
+      }
+
+      @include mixin_media_query(r1) {
+        display: flex;
+      }
+    }
+
+  }
+
+  nav {
+    .contenedor-enlaces {
+      display: flex;
+      align-items: center;
+
+      @include mixin_media_query(r1) {
+        display: none;
+      }
+    }
+
+  }
+
+  .menu-movil{
+    display: none;
+    cursor: pointer;
+  }
+
+  .busqueda {
+    display: flex;
+    align-items: center;
+
+    @include mixin_media_query(r3) {
+      display: none;
+    }
+  }
+
+  @include mixin_media_query(r3) {
+    flex-direction: row;
+  }
+
+}

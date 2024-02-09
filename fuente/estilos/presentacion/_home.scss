@@ -1,0 +1,58 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+
+  .base-body {
+    max-width: 90%;
+    margin: 20px;
+    min-height: 500px;
+    line-height: 1.5;
+    box-shadow: 4px 0px 20px 1px #29d5cf;
+    margin-bottom: 40px;
+
+    h1 {
+      font-family: $fuente_titulos;
+      text-shadow: 2px 2px 4px $color_action;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    h1:hover {
+      color: $color_action;
+      text-shadow: 2px 2px 4px $color_texto;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    #asesinato {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: $fondo_asesinato_pc;
+    }
+
+    #forajido {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: $fondo_forajido_pc;
+    }
+
+    #sutileza {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: $fondo_sutileza_pc;
+    }
+
+    .pos1 {
+      background-color: rgb($color_main, $opacidad);
+
+    }
+
+    .pos2 {
+        background-color: rgb($color_main, $opacidad);
+
+    }
+
+  }
+}
