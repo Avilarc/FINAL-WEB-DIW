@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../estilos/prueba.css">
+    <script src="../scripts/login.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login-section">
+            <form>
+                <h1>Log In</h1>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button id="logAcc">Aceptar</button>
+            </form>
+            <article id="account-info">
+                <a id="goToReg">¿No tienes una cuenta?</a>
+                <a id="goToRem">Has olvidado la contraseña</a>
+            </article>
+        </section>
+        <section id="register-section">
+            <form>
+                <h1>Registro</h1>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="date" name="birth-date" id="birth-date" placeholder="01/01/2024">
+
+                <button id="registrar">Aceptar</button>
+            </form>
+            <a id="goBack">¿Ya tienes una cuenta?</a>
+        </section>
+        <section id="remember-section">
+            <p>Por favor, introduce la dirección de correo electrónico que utilizaste para registrarte.
+                Te enviaremos un e-mail con tu nueva contraseña. Revisa el correo no deseado si no lo recibes.
+                En caso de complicaciones, envíanos un mensaje a: support@defias-tavern.com</p>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button id="remember">Aceptar</button>
+        </section>
+    </main>
+</body>
+</html>

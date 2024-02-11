@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  justify-content: space-between;
+
+  #login-section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    form {
+      flex-direction: column;
+
+      input {
+        box-sizing: border-box;
+      }
+
+      button {
+        box-sizing: border-box;
+      }
+    }
+
+    #account-info {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  #register-section {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    form {
+      flex-direction: column;
+
+      input {
+        box-sizing: border-box;
+      }
+
+      button {
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  #remember-section {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    form {
+      flex-direction: column;
+
+      input {
+        box-sizing: border-box;
+      }
+
+      button {
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  @include mixin_media_query(r3) {
+    flex-direction: column;
+  }
+}

@@ -30,18 +30,33 @@ main {
       background-size: cover;
       background-repeat: no-repeat;
       background-image: $fondo_asesinato_pc;
+
+      @include mixin_media_query(r3) {
+        background: none;
+        background-color: rgb(166, 163, 152);
+      }
     }
 
     #forajido {
       background-size: cover;
       background-repeat: no-repeat;
       background-image: $fondo_forajido_pc;
+
+      @include mixin_media_query(r3) {
+        background: none;
+        background-color: rgb(166, 163, 152);
+      }
     }
 
     #sutileza {
       background-size: cover;
       background-repeat: no-repeat;
       background-image: $fondo_sutileza_pc;
+
+      @include mixin_media_query(r3) {
+        background: none;
+        background-color: rgb(166, 163, 152);
+      }
     }
 
     .pos1 {
