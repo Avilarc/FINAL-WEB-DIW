@@ -5,7 +5,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #537C8E;
+    background-color: $color_menus;
     height: 100vh;
     width: 50%;
 
@@ -14,18 +14,18 @@ main {
       max-width: 500px;
 
       input {
-        background-color: #A6A398E2;
+        background-color: $color_main;
         margin-bottom: 10px;
         padding: 10px;
         width: 100%;
       }
 
       input::placeholder {
-        color: #000000;
+        color: $color_texto;
       }
 
       button {
-        background-color: #FB503A;
+        background-color: $color_texto;
         cursor: pointer;
         margin-bottom: 10px;
         padding: 10px;
@@ -44,7 +44,7 @@ main {
       }
 
       a:hover {
-        color: #FB503A;
+        color: $color_action;
       }
     }
 
@@ -55,7 +55,7 @@ main {
   }
 
   #register-section {
-    background-color: #537C8E;
+    background-color: $color_menus;
     height: 100vh;
     width: 50%;
     justify-content: center;
@@ -67,18 +67,18 @@ main {
       max-width: 500px;
 
       input {
-        background-color: #A6A398E2;
+        background-color: $color_main;
         margin-bottom: 10px;
         padding: 10px;
         width: 100%;
       }
 
       input::placeholder {
-        color: #000000;
+        color: $color_texto;
       }
 
       button {
-        background-color: #FB503A;
+        background-color: $color_action;
         cursor: pointer;
         margin-bottom: 10px;
         padding: 10px;
@@ -98,7 +98,7 @@ main {
   }
 
   #remember-section {
-    background-color: #537C8E;
+    background-color: $color_menus;
     height: 100vh;
     width: 50%;
     justify-content: center;
@@ -110,18 +110,18 @@ main {
       max-width: 500px;
 
       input {
-        background-color: #A6A398E2;
+        background-color: $color_main;
         margin-bottom: 10px;
         padding: 10px;
         width: 100%;
       }
 
       input::placeholder {
-        color: #000000;
+        color: $color_texto;
       }
 
       button {
-        background-color: #FB503A;
+        background-color: $color_action;
         cursor: pointer;
         margin-bottom: 10px;
         padding: 10px;

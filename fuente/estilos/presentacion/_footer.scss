@@ -6,6 +6,7 @@ footer {
   a {
     color: $color_action;
     text-decoration: none;
+    font-size: clamp(1.5em, 2.5vw, 2em);
   }
 
   a:hover {
@@ -14,6 +15,7 @@ footer {
 
   p {
     margin: 5px;
+    font-size: clamp(1em, 1.5vw, 1.5em);
   }
 
   .contacto {
@@ -29,6 +31,7 @@ footer {
     margin-right: 20px;
 
     a {
+      font-size: clamp(1.5em, 2.5vw, 2em);
       i {
         color: $color_texto;
       }
