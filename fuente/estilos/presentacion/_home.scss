@@ -3,7 +3,7 @@ main {
   margin-right: auto;
   max-width: 90%;
 
-  .base-body {
+  .base-body, #asesinato, #forajido, #sutileza {
     max-width: 90%;
     margin: 20px;
     min-height: 500px;
@@ -36,48 +36,32 @@ main {
       font-size: clamp(1em, 1.5vw, 1.5em);
     }
 
-    #asesinato {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: $fondo_asesinato_pc;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-      @include mixin_media_query(r3) {
-        background: none;
-        background-color: rgb(166, 163, 152);
-      }
-    }
-
-    #forajido {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: $fondo_forajido_pc;
-
-      @include mixin_media_query(r3) {
-        background: none;
-        background-color: rgb(166, 163, 152);
-      }
-    }
-
-    #sutileza {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: $fondo_sutileza_pc;
-
-      @include mixin_media_query(r3) {
-        background: none;
-        background-color: rgb(166, 163, 152);
-      }
+    @include mixin_media_query(r3) {
+      background: none;
+      background-color: rgb(166, 163, 152);
     }
 
     .pos1 {
       background-color: rgb($color_main, $opacidad);
-
     }
 
     .pos2 {
-        background-color: rgb($color_main, $opacidad);
-
+      background-color: rgb($color_main, $opacidad);
     }
+  }
 
+  #asesinato {
+    background-image: $fondo_asesinato_pc;
+  }
+
+  #forajido {
+    background-image: $fondo_forajido_pc;
+  }
+
+  #sutileza {
+    background-image: $fondo_sutileza_pc;
   }
 }
