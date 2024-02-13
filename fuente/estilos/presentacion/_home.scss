@@ -1,67 +1,69 @@
-main {
+#home{
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
 
-  .base-body, #asesinato, #forajido, #sutileza {
+  .base-body {
     max-width: 90%;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     min-height: 500px;
     line-height: 1.5;
     box-shadow: 4px 0px 20px 1px #29d5cf;
-    margin-bottom: 40px;
 
     h1 {
-      font-family: $fuente_titulos;
-      text-shadow: 2px 2px 4px $color_action;
+      text-shadow: 2px 2px 4px #FB503A;
       transition: color 0.3s ease, text-shadow 0.3s ease;
-      font-size: clamp(2em, 3vw, 3em);
-    }
 
-    h1:hover {
-      color: $color_action;
-      text-shadow: 2px 2px 4px $color_texto;
-    }
-
-    h2 {
-      font-size: clamp(1.5em, 2.5vw, 2em);
-    }
-
-    h3 {
-      font-size: clamp(1.5em, 2.5vw, 2em);
+      &:hover {
+        color: #FB503A;
+        text-shadow: 2px 2px 4px #000000;
+      }
     }
 
     p {
       margin-top: 20px;
-      font-size: clamp(1em, 1.5vw, 1.5em);
     }
 
+    .pos1, .pos2 {
+      background-color: rgba(166, 163, 152, 0.89);
+
+      h1 {
+        font-family: 'Playfair Display', serif;
+      }
+    }
+
+    .header-movil {
+      .img{
+        @include mixin_media_query(r3) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+  }
+
+  #asesinato, #sutileza, #forajido {
     background-size: cover;
     background-repeat: no-repeat;
 
     @include mixin_media_query(r3) {
-      background: none;
+      background-image: none;
       background-color: rgb(166, 163, 152);
     }
 
-    .pos1 {
-      background-color: rgb($color_main, $opacidad);
-    }
-
-    .pos2 {
-      background-color: rgb($color_main, $opacidad);
-    }
   }
 
   #asesinato {
-    background-image: $fondo_asesinato_pc;
-  }
-
-  #forajido {
-    background-image: $fondo_forajido_pc;
+    background-image: url("../Multimedia/Imagenes/ase.jpg");
   }
 
   #sutileza {
-    background-image: $fondo_sutileza_pc;
+    background-image: url("../Multimedia/Imagenes/suti.jpg");
+  }
+
+  #forajido {
+    background-image: url("../Multimedia/Imagenes/fora.jpg");
   }
 }

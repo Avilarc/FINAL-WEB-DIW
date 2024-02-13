@@ -7,7 +7,7 @@
     "desarrollo":"parcel fuente/index.html --dist-dir desarrollo",
     "produccion":"parcel build fuente/index.html --public-url './' --dist-dir produccion",
     "limpieza": "rimraf desarrollo produccion .parcel-cache",
-    "des": "npm run desarrollo",
+    "des": "npm-run-all limpieza desarrollo",
     "prod": "npm-run-all limpieza produccion"
   },
   "repository": {
