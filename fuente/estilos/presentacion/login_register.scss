@@ -1,0 +1,174 @@
+#fondo-login {
+  background: $fondo_login_pc;
+
+  #login-registro {
+    background-color: $color_main;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+
+    #login-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      h1 {
+        font-family: $fuente_titulos;
+        color: $color_texto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        input {
+          width: 80%;
+          padding: 0.5em;
+          border: none;
+          border-radius: 5px;
+          background-color: $color_main;
+          color: $color_texto;
+          font-size: 1.5em;
+          text-align: center;
+
+
+        }
+        button {
+          width: 80%;
+          padding: 0.5em;
+          border: none;
+          border-radius: 5px;
+          background-color: $color_action;
+          color: $color_texto;
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+
+        #account-info {
+          display: flex;
+          align-items: center;
+          gap: 2em;
+
+          a {
+            &:hover {
+              color: $color_action;
+            }
+          }
+        }
+      }
+
+
+
+    }
+
+    #register-section {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      h1 {
+        font-family: $fuente_titulos;
+        color: $color_texto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        input {
+          width: 80%;
+          padding: 0.5em;
+          border: none;
+          border-radius: 5px;
+          background-color: $color_main;
+          color: $color_texto;
+          font-size: 1.5em;
+          text-align: center;
+
+
+        }
+        button {
+          width: 80%;
+          padding: 0.5em;
+          border: none;
+          border-radius: 5px;
+          background-color: $color_action;
+          color: $color_texto;
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+        a {
+
+          &:hover {
+            color: $color_action;
+          }
+
+        }
+      }
+    }
+
+    #remember-section {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 1em;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        font-family: $fuente_texto;
+        color: $color_texto;
+        font-size: 1.5em;
+
+      }
+
+      input {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0.5em;
+        border: none;
+        border-radius: 5px;
+        background-color: $color_main;
+        color: $color_texto;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      button {
+        width: 80%;
+        padding: 0.5em;
+        border: none;
+        border-radius: 5px;
+        background-color: $color_action;
+        color: $color_texto;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+      a {
+
+        &:hover {
+          color: $color_action;
+        }
+
+      }
+    }
+
+    @include mixin_media_query(r3) {
+      background-color: $color_menus;
+      width: 100%;
+    }
+  }
+}

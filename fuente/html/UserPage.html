@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>User Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../estilos/prueba.css">
+    <link rel="stylesheet" href="../estilos/principal.scss">
     <script src="../scripts/usuario.js" defer></script>
 </head>
 <body>
@@ -30,9 +30,9 @@
         </section>
 
     </header>
-    <main id="login-register">
-        <section class ="perfil">
-            <article>
+    <main id="login-usuario">
+        <section class ="perfil" id="info-perfil">
+            <article id="titulo-img">
                 <h2>Perfil</h2>
                 <img src="../Multimedia/Imagenes/user.webp">
             </article>
@@ -44,7 +44,7 @@
                 <p>Email: <span id="email_parrafo">Email</span></p>
                 <button id="editar">Editar</button>
             </article>
-            <article id = "editar-perfil">
+            <article id = "edita-perfil">
                 <h2>Editar perfil</h2>
                 <form>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
@@ -60,14 +60,14 @@
             <button id="borrar">Cerrar Cuenta</button>
 
         </section>
-        <section class = "perfil-builds">
+        <section class = "perfil" id="info-builds">
             <h2>Builds del Usuario</h2>
             <button class="ampliar"></button>
             <article id = "datos-build" class="oculto">
                 pta
             </article>
         </section>
-        <section class = "perfil-foro">
+        <section class = "perfil">
             <h2>Post del Usuario</h2>
             <button class="ampliar"></button>
             <article id = "datos-foro" class="oculto">
@@ -76,7 +76,7 @@
         </section>
     </main>
     <footer>
-        <section class = "contacto">
+        <section class = "contacto" id="info-foro">
             <h3>Contacto</h3>
             <p><i class="fa fa-envelope"></i> Email: info@defiastavern.com</p>
             <p><i class="fa fa-phone"></i> Teléfono: +1 234 567 890</p>

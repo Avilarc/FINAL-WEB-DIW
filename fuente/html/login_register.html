@@ -6,7 +6,7 @@
     <script src="../scripts/login.js" defer></script>
     <title>Login</title>
 </head>
-<body>
+<body id="fondo-login">
     <main id="login-registro">
         <section id="login-section">
             <form>
@@ -14,23 +14,26 @@
                 <input type="text" name="username" id="username" placeholder="Username">
                 <input type="password" name="password" id="password" placeholder="Password">
                 <button id="logAcc">Aceptar</button>
+                <article id="account-info">
+                    <a id="goToReg">¿No tienes una cuenta?</a>
+                    <a id="goToRem">Has olvidado la contraseña</a>
+
+                </article>
+                <a href="../html/UserPage.html">El boton de aceptar esta bug dar click para ir a UserPage</a>
             </form>
-            <article id="account-info">
-                <a id="goToReg">¿No tienes una cuenta?</a>
-                <a id="goToRem">Has olvidado la contraseña</a>
-            </article>
+
         </section>
         <section id="register-section">
             <form>
                 <h1>Registro</h1>
-                <input type="text" name="username" id="username" placeholder="Username">
-                <input type="password" name="password" id="password" placeholder="Password">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="date" name="birth-date" id="birth-date" placeholder="01/01/2024">
-
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="date" name="birth-date" id="birth-date" placeholder="01/01/2024" required>
                 <button id="registrar">Aceptar</button>
+                <a id="goBack">¿Ya tienes una cuenta?</a>
             </form>
-            <a id="goBack">¿Ya tienes una cuenta?</a>
+
         </section>
         <section id="remember-section">
             <p>Por favor, introduce la dirección de correo electrónico que utilizaste para registrarte.

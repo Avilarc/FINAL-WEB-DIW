@@ -19,10 +19,14 @@ function showRemember() {
     loginSection.style.display = 'none';
 }
 
-document.getElementById("logAcc").addEventListener("click", (evento) => {
+let logAccButton = document.getElementById("logAcc");
+logAccButton.onclick = null;
+
+logAccButton.addEventListener("click", (evento) => {
     evento.preventDefault();
-    window.location.href = "../html/UserPage.html";
-})
+    window.location.href = "../fuente/html/UserPage.html";
+});
+
 
 document.getElementById("registrar").addEventListener("click", (evento) => {
     evento.preventDefault();

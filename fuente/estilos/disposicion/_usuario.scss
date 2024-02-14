@@ -1,0 +1,31 @@
+#login-usuario {
+  .perfil {
+    @extend .base-body;
+    margin-bottom: 1%;
+  }
+
+  #info-perfil {
+    display: grid;
+    grid-template-areas:
+      "imagen datos"
+      "imagen editar"
+      "cerrar cerrar";
+    #titulo-img {
+      img {
+        grid-area: imagen;
+      }
+    }
+    #datos-perfil {
+      grid-area: datos;
+    }
+    #edita-perfil {
+      grid-area: edita;
+      display: none;
+    }
+
+    #borrar {
+      grid-area: cerrar;
+      justify-self: end;
+    }
+  }
+}
