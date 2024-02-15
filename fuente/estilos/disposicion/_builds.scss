@@ -1,0 +1,31 @@
+#builds-page {
+  .page_header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .page_title {
+      display: block;
+    }
+  }
+
+  .filer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+
+    .filter {
+      display: block;
+
+      .filter-list {
+        display: flex;
+        flex-direction: column;
+
+        .filter-list-item {
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+}

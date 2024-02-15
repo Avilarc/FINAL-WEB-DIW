@@ -12,7 +12,7 @@
     box-shadow: 4px 0px 20px 1px #29d5cf;
 
     h1 {
-      text-shadow: 2px 2px 4px #FB503A;
+      text-shadow: 2px 2px 4px $color_action;
       transition: color 0.3s ease, text-shadow 0.3s ease;
 
       &:hover {
