@@ -81,5 +81,9 @@
         }
       }
     }
+
+    @include mixin_media_query(r3) {
+      margin-right: 20px;
+    }
   }
 }

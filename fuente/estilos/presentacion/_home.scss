@@ -1,6 +1,5 @@
 #home{
   margin-left: auto;
-  margin-right: auto;
   max-width: 90%;
 
   .base-body {
@@ -36,7 +35,6 @@
     .header-movil {
       .img{
         @include mixin_media_query(r3) {
-          width: 100%;
           height: auto;
         }
       }
@@ -47,23 +45,25 @@
   #asesinato, #sutileza, #forajido {
     background-size: cover;
     background-repeat: no-repeat;
-
-    @include mixin_media_query(r3) {
-      background-image: none;
-      background-color: rgb(166, 163, 152);
-    }
+    background-color: rgb(166, 163, 152);
 
   }
 
   #asesinato {
-    background-image: url("../Multimedia/Imagenes/ase.jpg");
+    @include mixin_media_query_minW(r3) {
+      background-image: $fondo_asesinato_pc;
+    }
   }
 
   #sutileza {
-    background-image: url("../Multimedia/Imagenes/suti.jpg");
+    @include mixin_media_query_minW(r3) {
+      background-image: $fondo_sutileza_pc;
+    }
   }
 
   #forajido {
-    background-image: url("../Multimedia/Imagenes/fora.jpg");
+    @include mixin_media_query_minW(r3) {
+      background-image: $fondo_forajido_pc;
+    }
   }
 }
