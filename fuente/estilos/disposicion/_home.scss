@@ -5,8 +5,8 @@
 
     @include mixin_media_query(r3) {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-row: 1;
+      //grid-template-rows: 1fr;
+//      grid-row: 1;
     }
 
     .header-movil {

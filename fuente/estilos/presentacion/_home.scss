@@ -2,11 +2,15 @@
   margin-left: auto;
   max-width: 90%;
 
+  img{
+    width: 100%;
+  }
+
   .base-body {
     max-width: 90%;
     margin-top: 20px;
     margin-bottom: 40px;
-    min-height: 500px;
+//    min-height: 500px;
     line-height: 1.5;
     box-shadow: 4px 0px 20px 1px #29d5cf;
 
@@ -32,13 +36,13 @@
       }
     }
 
-    .header-movil {
+/*    .header-movil {
       .img{
         @include mixin_media_query(r3) {
           height: auto;
         }
       }
-    }
+    }*/
 
   }
 
