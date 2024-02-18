@@ -1,10 +1,19 @@
 #builds-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+
   .page_header {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
 
     .page_title {
+      display: block;
+    }
+
+    .crea-build {
       display: block;
     }
   }
@@ -24,6 +33,65 @@
         .filter-list-item {
           align-items: center;
           display: flex;
+        }
+      }
+    }
+  }
+
+  .builds_container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .build_category {
+      align-self: center;
+      display:block;
+    }
+
+    .build {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+
+      .build_main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .build_left {
+          align-items: center;
+          display: flex;
+
+          .build_name{
+            display: flex;
+            flex-direction: column;
+
+          }
+        }
+
+        .build_mid {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+
+          .build_skill_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+        }
+
+        .build_right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .build_author_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }
