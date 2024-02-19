@@ -13,11 +13,15 @@ header {
     }
 
     h2 {
+      @include mixin_media_query(r4) {
+        display: none;
+      }
+
       @include mixin_media_query(r2) {
         display: none;
       }
 
-      @include mixin_media_query(r1) {
+      @include mixin_media_query(r3) {
         display: flex;
       }
     }
@@ -29,7 +33,7 @@ header {
       display: flex;
       align-items: center;
 
-      @include mixin_media_query(r1) {
+      @include mixin_media_query(r2) {
         display: none;
       }
     }
@@ -39,6 +43,16 @@ header {
   .menu-movil{
     display: none;
     cursor: pointer;
+    background: none;
+    border: none;
+
+    &:hover {
+        color: $color_action;
+    }
+
+    @include mixin_media_query(r2) {
+      display: flex;
+    }
   }
 
   .busqueda {

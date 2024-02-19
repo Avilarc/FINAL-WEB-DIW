@@ -1,25 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .main_foro{
+  flex-grow: 1;
   .foro_menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 
     ul {
       display: flex;
     }
 
     .btn-crear-post{
-      align-self: flex-end;
+      align-self: flex-start;
     }
   }
 
-  .main_foro {
+  .contenido_mostrado {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    flex-grow: 1;
 
-    .contenido_mostrado {
-      flex-grow: 1;
+    .destacados_foro {
+      display: none;
+    }
+
+    .nuevos_foro {
+      display: none;
     }
   }
 }

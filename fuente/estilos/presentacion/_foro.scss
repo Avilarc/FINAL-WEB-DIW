@@ -1,10 +1,14 @@
 .main_foro {
   background: $color_menus;
-
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
   .foro_menu {
     background: $color_main;
-    border: 1px solid $color_action;
-    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 
     ul {
       list-style-type: none;
