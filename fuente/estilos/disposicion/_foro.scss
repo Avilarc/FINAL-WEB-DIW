@@ -1,0 +1,25 @@
+.main_foro{
+  .foro_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+    }
+
+    .btn-crear-post{
+      align-self: flex-end;
+    }
+  }
+
+  .main_foro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .contenido_mostrado {
+      flex-grow: 1;
+    }
+  }
+}
