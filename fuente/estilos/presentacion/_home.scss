@@ -31,7 +31,7 @@
     }
 
     .pos1, .pos2 {
-      background-color: rgba(166, 163, 152, 0.89);
+      background-color: rgba(166, 163, 152, $opacidad);
 
       h1 {
         font-family: 'Playfair Display', serif;

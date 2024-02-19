@@ -16,12 +16,34 @@
     .crea-build {
       display: block;
     }
+
+    @include mixin_media_query(r5) {
+      display: none;
+    }
+  }
+
+  .page_header_mobile {
+    display: none;
+
+    @include mixin_media_query(r5) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .filter-wraper {
+        display: flex;
+      }
+    }
   }
 
   .filer-wrapper {
     display: flex;
     flex-wrap: wrap;
     z-index: 10;
+
+    @include mixin_media_query(r5) {
+      display: none;
+    }
 
     .filter {
       display: block;

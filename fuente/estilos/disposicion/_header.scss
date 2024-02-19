@@ -6,24 +6,21 @@ header {
   .logo {
     display: flex;
     align-items: center;
-    img {
-      @include mixin_media_query(r1) {
-        display: none;
-      }
-    }
+
 
     h2 {
       @include mixin_media_query(r4) {
         display: none;
+      }
+      @include mixin_media_query(r3) {
+        display: block;
       }
 
       @include mixin_media_query(r2) {
         display: none;
       }
 
-      @include mixin_media_query(r3) {
-        display: flex;
-      }
+
     }
 
   }
@@ -33,7 +30,7 @@ header {
       display: flex;
       align-items: center;
 
-      @include mixin_media_query(r2) {
+      @include mixin_media_query(r1) {
         display: none;
       }
     }
@@ -50,7 +47,7 @@ header {
         color: $color_action;
     }
 
-    @include mixin_media_query(r2) {
+    @include mixin_media_query(r1) {
       display: flex;
     }
   }
