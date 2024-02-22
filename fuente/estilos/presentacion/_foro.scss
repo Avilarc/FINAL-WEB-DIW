@@ -16,7 +16,8 @@
       margin-top: 5%;
       margin-bottom: -1.5%;
       margin-left: -7%;
-      margin-right: 50%;
+      margin-right: 65%;
+      min-width: 380px;
       list-style: none;
       font-size: clamp(1.5rem, 2vw, 2rem);
       border: 1px solid #333;
@@ -25,6 +26,14 @@
       background-color: #1a1a1d;
       z-index: 2;
       border-radius: 5px;
+
+      @include mixin_media_query(r6) {
+        margin-left: -1%;
+      }
+
+
+
+
       li {
         color: #fff;
         margin-left: 4%;
@@ -63,7 +72,7 @@
     background: #1a1a1d;
     color: #fff;
     border-radius: 5px;
-    padding: 20px;
+    margin-bottom: 2%;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 
     .catergorias_foro,
@@ -142,18 +151,48 @@
     }
 
     .destacados_foro, .nuevos_foro {
+      .fechas_post {
+        margin-bottom: 2%;
+      }
       .tabla_foro {
         tr.topic-list-item {
+
+          td.topic-item-title {
+            padding-left: 12.5%;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
           td.topic-item-creator {
-            padding-left: 6.4%;
+            padding-left: 7.3%;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
           }
 
           td.topic-item-replies {
-            padding-left: 12%;
+            padding-left: 13%;
+            button {
+              background: #333;
+              width: 40px;
+              height: 30px;
+              border: none;
+              border-radius: 5px;
+
+              i {
+                color: $color_action;
+              }
+
+              span {
+                color: #fff;
+              }
+            }
           }
 
           td.topic-item-shows {
-            padding-left: 7%;
+            padding-left: 8%;
           }
         }
 
