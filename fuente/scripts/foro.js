@@ -5,9 +5,9 @@ let nuevos = document.querySelector(".nuevos_foro");
 let vacio = document.createElement("div");
 vacio.style.background = "#060129";
 vacio.style.width = "100%";
-vacio.style.height = "280px"; // set initial height for categorias
+vacio.style.height = "500px";
 
-main.appendChild(vacio); // append vacio to main initially
+main.appendChild(vacio);
 
 let menuItems = document.querySelectorAll(".foro_navigation li");
 
@@ -20,19 +20,19 @@ menuItems.forEach(item => {
                 categorias.style.display = "flex";
                 destacados.style.display = "none";
                 nuevos.style.display = "none";
-                vacio.style.height = "280px";
+                vacio.style.height = "500px";
                 break;
             case 'Destacados':
                 categorias.style.display = "none";
                 destacados.style.display = "flex";
                 nuevos.style.display = "none";
-                vacio.style.height = "50px";
+                vacio.style.height = "500px";
                 break;
             case 'Nuevos':
                 categorias.style.display = "none";
                 destacados.style.display = "none";
                 nuevos.style.display = "flex";
-                vacio.style.height = "100px";
+                vacio.style.height = "500px";
                 break;
         }
         if(!main.contains(vacio)) {
