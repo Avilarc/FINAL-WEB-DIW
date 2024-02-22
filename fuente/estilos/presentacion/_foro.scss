@@ -14,10 +14,19 @@
 
     .foro_navigation {
       margin-top: 5%;
-      margin-bottom: 2%;
+      margin-bottom: -1.5%;
+      margin-left: -7%;
+      margin-right: 50%;
       list-style: none;
       font-size: clamp(1.5rem, 2vw, 2rem);
+      border: 1px solid #333;
+      box-shadow:  0 0 10px rgba(0,0,0,0.15);
+      padding:10px;
+      background-color: #1a1a1d;
+      z-index: 2;
+      border-radius: 5px;
       li {
+        color: #fff;
         margin-left: 4%;
         &:hover {
           color: $color_action;
@@ -49,7 +58,7 @@
   }
 
   .contenido_mostrado {
-    width: 80%;
+    width: 99%;
     margin: auto;
     background: #1a1a1d;
     color: #fff;
@@ -61,15 +70,6 @@
     .destacados_foro,
     .nuevos_foro {
       margin-bottom: 20px;
-    }
-
-    .categoria_contenedor {
-      padding: 10p;
-      border-bottom: 1px solid #333;
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
 
     .tabla_foro {
@@ -100,10 +100,63 @@
         padding: 10px;
         border-bottom: 1px solid #333;
         transition: background-color 0.3s ease;
+        border-bottom: 1px solid #333;
+        text-decoration: none;
+
+        h4 {
+          font-size: clamp(1.2rem, 2vw, 1.4rem);
+          color: white;
+        }
+
+        h5 {
+          font-size: clamp(0.8rem, 1.5vw, 1rem);
+          color: $color_main;
+        }
+
+
+        &:last-child {
+          border-bottom: none;
+        }
 
         &:hover {
-          background: $color_action;
+          h4 {
+            border-bottom: 1px solid $color_action;
+          }
+
+
         }
+
+      }
+
+      .subcategorias {
+        .subcategoria_enlace {
+          margin-bottom: 5%;
+
+          &:hover {
+            span {
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .destacados_foro, .nuevos_foro {
+      .tabla_foro {
+        tr.topic-list-item {
+          td.topic-item-creator {
+            padding-left: 6.4%;
+          }
+
+          td.topic-item-replies {
+            padding-left: 12%;
+          }
+
+          td.topic-item-shows {
+            padding-left: 7%;
+          }
+        }
+
       }
     }
 

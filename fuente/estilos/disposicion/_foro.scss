@@ -38,17 +38,26 @@ body {
 
     .destacados_foro {
       display: none;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .nuevos_foro {
-      display: none;
-    }
-    .fo
-    .subcategorias {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between;
+
+    }
+
+    .catergorias_foro {
+      display: none;
+
+      .subcategorias {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     }
   }
 }
