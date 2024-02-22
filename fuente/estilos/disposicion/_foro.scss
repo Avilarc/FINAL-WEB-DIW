@@ -5,16 +5,28 @@ body {
 }
 .main_foro{
   flex-grow: 1;
+
   .foro_menu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 0;
+    .foro_titulo {
+      order: 0;
+    }
 
-    ul {
+    .foro_navigation {
       display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      flex-direction: row;
+      order: 0;
     }
 
     .btn-crear-post{
-      align-self: flex-start;
+      align-self: flex-end;
+      order: 2;
     }
   }
 
@@ -22,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    flex-grow: 1;
+    order: 2;
 
     .destacados_foro {
       display: none;
@@ -30,6 +42,13 @@ body {
 
     .nuevos_foro {
       display: none;
+    }
+    .fo
+    .subcategorias {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }

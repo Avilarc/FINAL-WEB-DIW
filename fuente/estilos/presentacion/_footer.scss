@@ -1,30 +1,37 @@
 footer {
   background-color: #537C8E;
   color: black;
-}
 
-footer a {
-  color: #FB503A;
-  text-decoration: none;
-
-  &:hover {
-    color: white;
-  }
-}
-
-footer p {
-  margin: 5px;
-}
-
-.contacto {
-  margin-left: 10px;
-}
-
-.socialMedia a i {
-  font-size: clamp(2em,2.5vw,2.2em);
-  color: black;
-
-  &:hover {
+  a {
     color: #FB503A;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  p {
+    margin: 5px;
+  }
+
+  .aboutUs {
+    max-width: 700px;
+  }
+
+  .contacto {
+    margin-left: 10px;
+  }
+
+  .socialMedia a i {
+    font-size: clamp(2em,2.5vw,2.2em);
+    color: black;
+
+    &:hover {
+      color: #FB503A;
+    }
   }
 }
+
+
+
