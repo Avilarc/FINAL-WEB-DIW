@@ -37,9 +37,13 @@ body {
 
   .contenido_mostrado {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: stretch;
     order: 2;
+
+    @include mixin_media_query(r2) {
+      align-items: flex-start;
+    }
 
     .destacados_foro {
       display: none;
@@ -56,12 +60,26 @@ body {
 
     .catergorias_foro {
       display: flex;
+      width: 99%;
+      margin: auto;
+
+      @include mixin_media_query(r2) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
 
       .subcategorias {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
+
+        @include mixin_media_query(r2) {
+          flex-direction: column;
+            justify-content: center;
+
+        }
       }
     }
   }
