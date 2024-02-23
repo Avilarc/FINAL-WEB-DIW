@@ -23,39 +23,80 @@
       padding: 10px 20px;
       text-decoration: none;
       transition: all 0.3s ease;
+
+      @include mixin_media_query(r5) {
+        margin-bottom: 1%;
+      }
       &:hover {
         background: linear-gradient(to right, darken($color_action, 5%), darken($color_action, 10%));
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
     }
 
-  }
+    .page_header_mobile {
+      margin-top: 3%;
+      margin-bottom: -6%;
+      .filer-wrapper {
+        min-width: 150px;
+        width: 150px;
 
-  .page_header_mobile {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 100%;
-    min-width: 90%;
-    background-color: $color_menus;
+        .filter {
+          background: $color_menus;
+          border-radius: 5px;
+          box-sizing: border-box;
+          min-width: 450px;
 
-    .crea-build {
-      background: linear-gradient(to right, $color_action, $color_action);
-      margin-left: auto;
-      margin-right: 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
-      padding: 10px 20px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      &:hover {
-        background: linear-gradient(to right, darken($color_action, 5%), darken($color_action, 10%));
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          @include mixin_media_query(r2) {
+            min-width: 280px;
+          }
+
+          .filter-list {
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            overflow: hidden;
+          }
+          .filter-list-item {
+            color: hsla(0,0%,100%,.6);
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            font-family: $fuente_texto;
+
+            &:hover {
+              background: $color_action;
+              color: hsla(0,0%,100%,.8);
+            }
+
+            &.active {
+              background: rgb($color_menus,$opacidad);
+
+              .filter-icon {
+                background: $color_action;
+              }
+
+            }
+            &:focus {
+              outline: none;
+            }
+
+            .filter-icon {
+              background: $color_main;
+              border-radius: 5px;
+              width: 25px;
+              height: 25px;
+              overflow-clip-margin: content-box;
+              overflow: clip;
+            }
+
+          }
+        }
+
       }
     }
 
   }
+
+
 
   .filer-wrapper {
     margin-bottom: 40px;
@@ -220,6 +261,9 @@
           height: 40px;
           width: 40px;
 
+          @include mixin_media_query(r2) {
+            margin-top: 3%;
+          }
           .build_author_icon {
             height: 100%;
             width: 100%;
