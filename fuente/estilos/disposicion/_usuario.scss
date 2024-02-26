@@ -1,32 +1,41 @@
 #login-usuario {
-  height: 100vh;
-  .perfil {
-    //@extend .base-body;
-    margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mixin_media_query(r1) {
+    flex-direction: row;
   }
 
-  #info-perfil {
-    display: grid;
-    grid-template-areas:
-      "imagen datos"
-      "imagen editar"
-      "cerrar cerrar";
-    #titulo-img {
-      img {
-        grid-area: imagen;
-      }
-    }
-    #datos-perfil {
-      grid-area: datos;
-    }
-    #edita-perfil {
-      grid-area: edita;
-      display: none;
-    }
+  section {
 
-    #borrar {
-      grid-area: cerrar;
-      justify-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  
+  #edita-perfil {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        align-items: center;
+      }
+
+      button {
+        margin-bottom: 4%;
+      }
     }
   }
 }
