@@ -2,6 +2,10 @@
   margin-left: auto;
   max-width: 90%;
 
+  @include mixin_media_query(r2) {
+    max-width: 100%;
+  }
+
   img{
     width: 100%;
   }
@@ -13,6 +17,9 @@
     line-height: 1.5;
     box-shadow: 4px 0px 20px 1px #29d5cf;
 
+    @include mixin_media_query(r2) {
+        max-width: 100%;
+    }
     @include mixin_media_query_minW(r3) {
       min-height: 500px;
     }
@@ -28,6 +35,12 @@
 
     p {
       margin-top: 20px;
+
+      @include mixin_media_query(r2) {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 2%;
+      }
     }
 
     .pos1, .pos2 {

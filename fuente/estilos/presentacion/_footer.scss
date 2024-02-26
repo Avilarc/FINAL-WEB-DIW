@@ -17,6 +17,10 @@ footer {
 
   .aboutUs {
     max-width: 700px;
+
+    @include mixin_media_query(r2) {
+      max-width: 300px;
+    }
   }
 
   .contacto {
