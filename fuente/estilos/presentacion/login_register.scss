@@ -1,5 +1,7 @@
 #fondo-login {
   background: $fondo_login_pc;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   #login-registro {
     background-color: $color_main;
