@@ -6,15 +6,27 @@ $color_menus: #537C8E;
 $color_action: #FB503A;
 $color_main: #A6A398E2;
 $opacidad: 0.85;
-$fondo_asesinato_pc: url('../Multimedia/Imagenes/ase.jpg');
-$fondo_forajido_pc: url('../Multimedia/Imagenes/fora.jpg');
-$fondo_sutileza_pc: url('../Multimedia/Imagenes/suti.jpg');
-$fondo_login_pc: url('../Multimedia/Imagenes/loginFondo.jpg');
+$fondo_asesinato_pc_100: url('../Multimedia/fondos/ase100.webp');
+$fondo_asesinato_pc_80: url('../Multimedia/fondos/ase80.webp');
+$fondo_asesinato_pc_50: url('../Multimedia/fondos/ase50.webp');
+$fondo_asesinato_pc_30: url('../Multimedia/fondos/ase30.webp');
+$fondo_forajido_pc_100: url('../Multimedia/fondos/fora100.webp');
+$fondo_forajido_pc_80: url('../Multimedia/fondos/fora80.webp');
+$fondo_forajido_pc_50: url('../Multimedia/fondos/fora50.webp');
+$fondo_forajido_pc_30: url('../Multimedia/fondos/fora30.webp');
+$fondo_sutileza_pc_100: url('../Multimedia/fondos/suti100.webp');
+$fondo_sutileza_pc_80: url('../Multimedia/fondos/suti80.webp');
+$fondo_sutileza_pc_50: url('../Multimedia/fondos/suti50.webp');
+$fondo_sutileza_pc_30: url('../Multimedia/fondos/suti30.webp');
+$fondo_login_pc_100: url('../Multimedia/fondos/loginFondo200.webp');
+$fondo_login_pc_80: url('../Multimedia/fondos/loginFondo100.webp');
+$fondo_login_pc_60: url('../Multimedia/fondos/loginFondo80.webp');
 $ruptura: (
     r1: 450px,
     r2: 550px,
     r3: 705px,
     r4: 860px,
     r5: 890px,
-    r6: 1190px
+    r6: 1190px,
+    r7: 1600px
 )

@@ -1,5 +1,14 @@
 #fondo-login {
-  background: $fondo_login_pc;
+  background: $fondo_login_pc_100;
+  background-size: initial;
+
+  @include mixin_media_query(r7) {
+    background: $fondo_login_pc_80;
+  }
+
+  @include mixin_media_query(r6) {
+    background: $fondo_login_pc_60;
+  }
 
   #login-registro {
     background-color: $color_main;

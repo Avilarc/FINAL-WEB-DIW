@@ -57,19 +57,34 @@
 
   #asesinato {
     @include mixin_media_query_minW(r3) {
-      background-image: $fondo_asesinato_pc;
+      background-image: $fondo_asesinato_pc_80;
     }
+
+    @include mixin_media_query_minW(r4) {
+      background-image: $fondo_asesinato_pc_100;
+    }
+
+
   }
 
   #sutileza {
     @include mixin_media_query_minW(r3) {
-      background-image: $fondo_sutileza_pc;
+      background-image: $fondo_sutileza_pc_80;
     }
+
+    @include mixin_media_query_minW(r4) {
+      background-image: $fondo_sutileza_pc_100;
+    }
+
   }
 
   #forajido {
     @include mixin_media_query_minW(r3) {
-      background-image: $fondo_forajido_pc;
+      background-image: $fondo_forajido_pc_80;
+    }
+
+    @include mixin_media_query_minW(r4) {
+      background-image: $fondo_forajido_pc_100;
     }
   }
 }

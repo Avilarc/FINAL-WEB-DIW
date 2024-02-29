@@ -16,6 +16,8 @@
       background: linear-gradient(to right, $color_action, $color_action);
       margin-left: auto;
       margin-right: 20px;
+      margin-top: 2%;
+      margin-bottom: 1%;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -44,9 +46,9 @@
           background: $color_menus;
           border-radius: 5px;
           box-sizing: border-box;
-          min-width: 450px;
+          min-width: 600px;
 
-          @include mixin_media_query(r2) {
+          @include mixin_media_query(r3) {
             min-width: 280px;
           }
 
@@ -80,12 +82,17 @@
             }
 
             .filter-icon {
-              background: $color_main;
+
               border-radius: 5px;
-              width: 25px;
-              height: 25px;
+              width: 45px;
+              height: 45px;
               overflow-clip-margin: content-box;
               overflow: clip;
+
+              @include mixin_media_query(r2) {
+                width: 35px;
+                height: 35px;
+              }
             }
 
           }
@@ -113,6 +120,7 @@
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
         overflow: hidden;
+        width: 100%;
       }
       .filter-list-item {
         border-bottom: 1px solid #26272d;
@@ -124,6 +132,7 @@
         font-family: $fuente_texto;
         font-size: 16px;
         font-weight: 400;
+
 
         &:hover {
           background: $color_action;
@@ -150,11 +159,10 @@
         }
 
         .filter-icon {
-          background: $color_main;
           border-radius: 5px;
           margin-right: 10px;
           padding: 5px;
-          width: 40px;
+          width: 50px;
           overflow-clip-margin: content-box;
           overflow: clip;
         }

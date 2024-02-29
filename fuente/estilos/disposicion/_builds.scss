@@ -17,7 +17,7 @@
     .page_header_mobile {
       display: none;
 
-      @include mixin_media_query(r5) {
+      @include mixin_media_query(r6) {
         display: flex;
         .filer-wrapper {
           display: flex;
@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     z-index: 10;
 
-    @include mixin_media_query(r5) {
+    @include mixin_media_query(r6) {
       display: none;
     }
 
