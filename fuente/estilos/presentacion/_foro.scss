@@ -1,6 +1,6 @@
 .main_foro {
   background: $color_menus;
-  margin-top: 1%;
+  margin-top: 4%;
   margin-bottom: 1%;
   width: 90%;
   margin-left: auto;
@@ -23,7 +23,7 @@
       border: 1px solid #333;
       box-shadow:  0 0 10px rgba(0,0,0,0.15);
       padding:10px;
-      background-color: #1a1a1d;
+      background-color: darken($color_main, 60%);
       z-index: 2;
       border-radius: 5px;
 
@@ -83,7 +83,7 @@
   .contenido_mostrado {
     width: 99%;
     margin: auto;
-    background: #1a1a1d;
+    background: darken($color_main, 60%);
     color: #fff;
     border-radius: 5px;
     margin-bottom: 2%;
@@ -116,7 +116,7 @@
     }
 
     .catergorias_foro {
-      background: #2a2a2d;
+      background: darken($color_main, 40%);
       border-radius: 5px;
       margin-bottom: 20px;
 

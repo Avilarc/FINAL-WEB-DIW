@@ -5,12 +5,18 @@
   min-height: 747px;
   max-width: 90%;
 
+  @include mixin_media_query(r3) {
+    max-width: 100%;
+  }
+
   .page_header {
     margin-top: 20px;
     margin-bottom: 10px;
     width: 100%;
     min-width: 90%;
     background-color: $color_menus;
+
+
 
     .crea-build {
       background: linear-gradient(to right, $color_action, $color_action);
@@ -217,9 +223,12 @@
             background: $color_action;
             border-radius: 5px;
             margin-right: 15px;
+            margin-bottom: 2%;
+            width: 100px;
             padding: 5px;
             overflow-clip-margin: content-box;
             overflow: clip;
+
           }
 
           .build_name {
@@ -275,9 +284,14 @@
           .build_author_icon {
             height: 100%;
             width: 100%;
-            background: $color_action; //cambiar cuando se tenga la imagen del usuario por transparent
+            background: $color_action;
             border:none;
             cursor: pointer;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
           }
         }
       }

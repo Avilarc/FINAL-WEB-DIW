@@ -1,32 +1,37 @@
 #login-usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  .perfil {
-    //@extend .base-body;
-    margin-bottom: 1%;
-  }
 
-  #info-perfil {
-    display: grid;
-    grid-template-areas:
-      "imagen datos"
-      "imagen editar"
-      "cerrar cerrar";
-    #titulo-img {
-      img {
-        grid-area: imagen;
-      }
-    }
-    #datos-perfil {
-      grid-area: datos;
-    }
-    #edita-perfil {
-      grid-area: edita;
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    #info-perfil {
       display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+
+    }
+
+    #edita-perfil {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #editar {
+      cursor: pointer;
     }
 
     #borrar {
-      grid-area: cerrar;
-      justify-self: end;
+      align-self: flex-end;
     }
   }
 }

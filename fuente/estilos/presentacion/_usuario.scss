@@ -1,13 +1,84 @@
 #login-usuario {
-  width: 90%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: $color_fondo_web;
 
   .perfil {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
     background-color: $color_main;
-    box-shadow: 4px 0px 20px 1px #29d5cf;
-  }
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
+    @include mixin_media_query_minW(r4) {
+      width: 90%;
+      height: auto;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    #datos-perfil {
+      p {
+        font-size: 16px;
+        color: $color_texto;
+        span {
+          font-weight: bold;
+        }
+      }
+
+      #editar {
+        background-color: $color_action;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($color_action, 10%);
+        }
+      }
+    }
+
+    #edita-perfil {
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: $color_texto;
+      }
+
+      button {
+        background-color: $color_action;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($color_action, 10%);
+        }
+      }
+    }
+
+    #borrar {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: darken(red, 10%);
+      }
+    }
+  }
 }
