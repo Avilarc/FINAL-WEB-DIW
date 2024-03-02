@@ -1,12 +1,18 @@
 #login-usuario {
-  background-color: $color_fondo_web;
+  background-image: $fondo_usuario;
+  background-size: cover;
+  background-position: center;
 
+  @include mixin_media_query(r2) {
+    background-image: none;
+  }
   .perfil {
     width: 100%;
     padding: 20px;
     border-radius: 10px;
     background-color: $color_main;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 
     @include mixin_media_query_minW(r4) {
       width: 90%;

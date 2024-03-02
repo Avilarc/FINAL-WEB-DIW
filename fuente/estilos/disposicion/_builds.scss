@@ -51,6 +51,8 @@
     display: flex;
     flex-wrap: wrap;
     z-index: 10;
+    position: sticky;
+    top: 0;
 
     @include mixin_media_query(r6) {
       display: none;
