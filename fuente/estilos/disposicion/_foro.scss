@@ -43,7 +43,7 @@ body {
     order: 2;
 
     @include mixin_media_query(r2) {
-      align-items: flex-start;
+      align-items: center;
     }
 
     .destacados_foro {
@@ -67,7 +67,7 @@ body {
       @include mixin_media_query(r2) {
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
       }
 
       .subcategorias {
@@ -77,8 +77,8 @@ body {
         justify-content: space-between;
 
         @include mixin_media_query(r2) {
-          flex-direction: column;
-            justify-content: center;
+          flex-direction: row;
+          justify-content: center;
 
         }
       }
