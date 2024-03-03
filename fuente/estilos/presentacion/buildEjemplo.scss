@@ -1,0 +1,60 @@
+#build-contenedor {
+  padding: 20px;
+  background-color: $color_menus;
+  margin: 2% auto;
+  max-width: 90%;
+  border-radius: 10px;
+
+  @include mixin_media_query(r4) {
+    max-width: 100%;
+  }
+
+  .build-details {
+    margin-bottom: 20px;
+
+  }
+
+  .recommended-items {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+
+    .items-list {
+
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+
+      }
+
+      &>div {
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100px;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid #373737;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .talents {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .stats {
+    text-align: center;
+
+
+  }
+}
