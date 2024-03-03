@@ -16,6 +16,14 @@
     @include mixin_media_query_minW(r3) {
       min-height: 500px;
     }
+    .header-movil {
+      width: 100%;
+      height: 150px;
+
+        @include mixin_media_query(r2) {
+            height: 125px;
+        }
+    }
     h1 {
       text-shadow: 2px 2px 4px $color_action;
       transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -38,13 +46,6 @@
       }
     }
 
-    /*    .header-movil {
-          .img{
-            @include mixin_media_query(r3) {
-              height: auto;
-            }
-          }
-        }*/
 
   }
 
@@ -56,6 +57,17 @@
   }
 
   #asesinato {
+
+    .header-movil {
+      @include mixin_media_query(r3) {
+        background-image: $fondo_asesinato_movil;
+        background-size: cover;
+      }
+
+       @include mixin_media_query(r2) {
+        background-image: $fondo_asesinato_movil_500;
+      }
+    }
     @include mixin_media_query_minW(r3) {
       background-image: $fondo_asesinato_pc_80;
     }
@@ -68,6 +80,18 @@
   }
 
   #sutileza {
+
+    .header-movil {
+      @include mixin_media_query(r3) {
+        background-image: $fondo_sutileza_movil;
+        background-size: cover;
+      }
+
+      @include mixin_media_query(r2) {
+        background-image: $fondo_sutileza_movil_500
+      }
+    }
+
     @include mixin_media_query_minW(r3) {
       background-image: $fondo_sutileza_pc_80;
     }
@@ -79,6 +103,18 @@
   }
 
   #forajido {
+
+    .header-movil {
+      @include mixin_media_query(r3) {
+        background-image: $fondo_forajido_movil;
+        background-size: cover;
+      }
+
+      @include mixin_media_query(r2) {
+        background-image: $fondo_forajido_movil_500;
+      }
+    }
+
     @include mixin_media_query_minW(r3) {
       background-image: $fondo_forajido_pc_80;
     }
