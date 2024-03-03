@@ -5,7 +5,10 @@
   align-items: flex-start;
 
   .page_header {
-
+    display: flex;
+    @include mixin_media_query(r6) {
+      display: block;
+    }
     .page_title {
       display: block;
     }
@@ -87,6 +90,7 @@
       align-items: center;
       display: flex;
       flex-wrap: wrap;
+      position: relative;
 
       .build_main {
         display: flex;
@@ -110,6 +114,10 @@
           flex-grow: 1;
           align-items: center;
 
+          @include mixin_media_query(r4) {
+            justify-content: center;
+          }
+
           .build_skill_wrapper {
             display: flex;
             justify-content: center;
@@ -127,6 +135,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: absolute;
+            top: 10%;
+            right: 2%;
           }
         }
       }
