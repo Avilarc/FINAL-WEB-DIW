@@ -16,9 +16,6 @@
     min-width: 90%;
     background-color: $color_menus;
 
-    .page_title {
-      width: 50%;
-    }
 
     .crea-build {
       background: linear-gradient(to right, $color_action, $color_action);
@@ -34,6 +31,9 @@
       text-decoration: none;
       transition: all 0.3s ease;
 
+      @include mixin-media_query(r6) {
+        margin: 4% auto 1% auto;
+      }
       @include mixin_media_query(r5) {
         margin-bottom: 1%;
       }
@@ -49,6 +49,10 @@
       .filer-wrapper {
         min-width: 350px;
         width: 600px;
+
+        @include mixin_media_query(r3) {
+          margin-right: 0;
+        }
 
         .filter {
           background: $color_menus;
@@ -72,10 +76,6 @@
             border: none;
             font-family: $fuente_texto;
 
-            @include mixin_media_query(r3) {
-              width: 50%;
-            }
-
             &:hover {
               background: $color_action;
               color: hsla(0,0%,100%,.8);
@@ -96,14 +96,14 @@
             .filter-icon {
 
               border-radius: 5px;
-              width: 45px;
-              height: 45px;
+              width: 50px;
+              height: 50px;
               overflow-clip-margin: content-box;
               overflow: clip;
 
               @include mixin_media_query(r2) {
-                width: 35px;
-                height: 35px;
+                width: 45px;
+                height: 45px;
               }
             }
 
@@ -226,6 +226,10 @@
           margin-right: 1%;
           margin-top: 1%;
 
+          @include mixin_media_query(r1) {
+            padding: 0px 0px;
+          }
+
           .build_left {
             width: 320px;
 
@@ -238,6 +242,10 @@
               padding: 5px;
               overflow-clip-margin: content-box;
               overflow: clip;
+
+              @include mixin_media_query(r1) {
+                margin: 5px 5px;
+              }
 
             }
 
@@ -268,6 +276,13 @@
               min-width: 45px;
               min-height: 45px;
 
+              @include mixin_media_query(r1) {
+                width: 40px;
+                height: 40px;
+                min-height: 40px;
+                min-width: 40px;
+              }
+
               .build_skill_icon {
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -278,6 +293,13 @@
                 overflow-clip: hidden;
                 width: 45px;
                 overflow-clip-margin: content-box;
+
+                @include mixin_media_query(r1) {
+                  width: 40px;
+                  height: 40px;
+                  min-height: 40px;
+                  min-width: 40px;
+                }
               }
             }
           }

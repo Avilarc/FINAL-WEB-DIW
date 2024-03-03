@@ -27,4 +27,28 @@
 
     }
   }
+
+  .talents {
+    .build-pc {
+      @include mixin_media_query(r3) {
+        display: none;
+      }
+    }
+
+    .build-mobile-1 {
+      display: none;
+
+      @include mixin_media_query(r3) {
+        display: block;
+      }
+    }
+
+    .build-mobile-2 {
+      display: none;
+
+      @include mixin_media_query(r3) {
+        display: block;
+      }
+    }
+  }
 }

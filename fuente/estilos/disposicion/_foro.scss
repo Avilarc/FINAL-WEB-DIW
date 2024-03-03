@@ -64,7 +64,7 @@ body {
       width: 99%;
       margin: auto;
 
-      @include mixin_media_query(r2) {
+      @include mixin_media_query(r3) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -76,10 +76,15 @@ body {
         flex-direction: column;
         justify-content: space-between;
 
-        @include mixin_media_query(r2) {
+        @include mixin_media_query(r3) {
           flex-direction: row;
           justify-content: center;
 
+        }
+
+        .subcategoria_enlace {
+          display: flex;
+          align-items: center;
         }
       }
     }

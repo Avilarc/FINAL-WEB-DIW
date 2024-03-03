@@ -121,13 +121,11 @@
       margin-bottom: 20px;
 
       .categoria_contenedor {
-        padding: 10px;
+        padding: 0px 10px;
         border-bottom: 1px solid #333;
         transition: background-color 0.3s ease;
         border-bottom: 1px solid #333;
         text-decoration: none;
-
-
 
         h4 {
           font-size: clamp(1.2rem, 2vw, 1.4rem);
@@ -168,8 +166,11 @@
       }
 
       .subcategorias {
+        width: 100%;
+
         .subcategoria_enlace {
           margin-bottom: 5%;
+          margin-right: 10px;
           text-decoration: none;
           color: white;
 
