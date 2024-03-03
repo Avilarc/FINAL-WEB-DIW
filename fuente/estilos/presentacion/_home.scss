@@ -69,10 +69,18 @@
       }
     }
     @include mixin_media_query_minW(r3) {
+      background-image: $fondo_asesinato_pc_40;
+    }
+
+    @include mixin_media_query_minW(r5) {
+      background-image: $fondo_asesinato_pc_60;
+    }
+
+    @include mixin_media_query_minW(r6) {
       background-image: $fondo_asesinato_pc_80;
     }
 
-    @include mixin_media_query_minW(r4) {
+    @include mixin_media_query_minW(r7) {
       background-image: $fondo_asesinato_pc_100;
     }
 
@@ -93,10 +101,18 @@
     }
 
     @include mixin_media_query_minW(r3) {
+      background-image: $fondo_sutileza_pc_40;
+    }
+
+    @include mixin_media_query_minW(r5) {
+      background-image: $fondo_sutileza_pc_60;
+    }
+
+    @include mixin_media_query_minW(r6) {
       background-image: $fondo_sutileza_pc_80;
     }
 
-    @include mixin_media_query_minW(r4) {
+    @include mixin_media_query_minW(r7) {
       background-image: $fondo_sutileza_pc_100;
     }
 
@@ -116,10 +132,18 @@
     }
 
     @include mixin_media_query_minW(r3) {
+      background-image: $fondo_forajido_pc_40;
+    }
+
+    @include mixin_media_query_minW(r5) {
+      background-image: $fondo_forajido_pc_60;
+    }
+
+    @include mixin_media_query_minW(r6) {
       background-image: $fondo_forajido_pc_80;
     }
 
-    @include mixin_media_query_minW(r4) {
+    @include mixin_media_query_minW(r7) {
       background-image: $fondo_forajido_pc_100;
     }
   }
