@@ -61,6 +61,52 @@ header {
     }
   }
 
+  #desplegable_movil {
+    display: none;
+    background-color: $color_menus;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    &.desplegado {
+      display: block;
+      transform: translateX(0);
+    }
+
+    a {
+      display: block;
+      color: $color_texto;
+      text-decoration: none;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: $color_action;
+
+      }
+    }
+
+    #cierra_desplegable {
+      background: transparent;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: $color_texto;
+
+      &:hover {
+        color: $color_action;
+      }
+    }
+  }
+
   @include mixin_media_query(r3) {
     flex-direction: row;
   }

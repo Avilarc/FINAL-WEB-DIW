@@ -5,6 +5,7 @@
     <title>Defias Tavern</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../fuente/estilos/principal.scss">
+    <script src="../fuente/scripts/despliegaMenu.js" defer></script>
 </head>
 <body>
 <header>
@@ -20,12 +21,21 @@
             <div><a href="../fuente/html/login_register.html" class = "link">Login</a></div>
         </div>
     </nav>
-    <button class="menu-movil">
+    <button class="menu-movil" id="menu-movil">
         <i class="fa fa-bars"></i>
     </button>
     <div class = "busqueda">
         <input type="text">
         <i class="fa fa-search"></i>
+    </div>
+    <div id="desplegable_movil">
+        <button id="cierra_desplegable">
+            <i class="fa fa-times"></i>
+        </button>
+        <div><a href="../fuente/index.html" class = "link">Home</a></div>
+        <div><a href="../fuente/html/builds.html" class = "link">Builds</a></div>
+        <div><a href="../fuente/html/Foro.html" class = "link">Foro</a></div>
+        <div><a href="../fuente/html/login_register.html" class = "link">Login</a></div>
     </div>
 
 </header>
